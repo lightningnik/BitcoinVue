@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="bitcoin.css">
+  <meta charset="utf-8">
+</head>
+
+  <body>
+    <div class="container" id="task">
+      <div class="columns medium-4" v-for="result in results">
+          <h3>Конвертер Bitcoin</h3>
+        <div class="block">
+            <p>ETH: {{ result.ETH }}</p>
+            <p>XRP: {{ result.XRP }}</p>
+            <p>TON: {{ result.TON }}</p>
+            <p>SOL: {{ result.SOL }}</p>
+            <p>APT: {{ result.APT }}</p>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/vue@3"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="BitcoinVue.js"></script>
+  </body>
+</html>
